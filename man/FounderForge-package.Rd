@@ -11,9 +11,9 @@ A point-and-click Shiny application that helps non-programmers prepare their own
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://OWNER.github.io/FounderForge}
-  \item \url{https://github.com/OWNER/FounderForge}
-  \item Report bugs at \url{https://github.com/OWNER/FounderForge/issues}
+  \item \url{https://ebenogoe.github.io/FounderForge/}
+  \item \url{https://github.com/ebenogoe/FounderForge}
+  \item Report bugs at \url{https://github.com/ebenogoe/FounderForge/issues}
 }
 
 }

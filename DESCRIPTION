@@ -1,6 +1,6 @@
 Package: FounderForge
 Title: Prepare Marker Data as AlphaSimR Founder Populations
-Version: 0.0.0.9000
+Version: 0.1.0
 Authors@R:
     person(given = "Ebenezer",
            family = "Ogoe",
@@ -14,7 +14,7 @@ Description: A point-and-click Shiny application that helps non-programmers
     required by AlphaSimR::newMapPop(), with progress feedback, helpful errors,
     optional before/after PCA validation and a full text log of the run.
 License: MIT + file LICENSE
-URL: https://ebenogoe.github.io/FounderForge, https://github.com/ebenogoe/FounderForge
+URL: https://ebenogoe.github.io/FounderForge/, https://github.com/ebenogoe/FounderForge
 BugReports: https://github.com/ebenogoe/FounderForge/issues
 Depends:
     R (>= 3.5.0)
@@ -37,7 +37,6 @@ Imports:
     vcfR
 Suggests:
     patchwork,
-    spelling,
     testthat (>= 3.0.0)
 Encoding: UTF-8
 Language: en-US
