@@ -13,11 +13,11 @@ full text log of the run.
 
 Useful links:
 
-- <https://OWNER.github.io/FounderForge>
+- <https://ebenogoe.github.io/FounderForge/>
 
-- <https://github.com/OWNER/FounderForge>
+- <https://github.com/ebenogoe/FounderForge>
 
-- Report bugs at <https://github.com/OWNER/FounderForge/issues>
+- Report bugs at <https://github.com/ebenogoe/FounderForge/issues>
 
 ## Author
 
