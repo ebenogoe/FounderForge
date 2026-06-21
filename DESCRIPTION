@@ -1,0 +1,46 @@
+Package: FounderForge
+Title: Prepare Marker Data as AlphaSimR Founder Populations
+Version: 0.0.0.9000
+Authors@R:
+    person(given = "Ebenezer",
+           family = "Ogoe",
+           role = c("aut", "cre"),
+           email = "ebenezerogoe@gmail.com")
+Description: A point-and-click Shiny application that helps non-programmers
+    prepare their own marker data (VCF, HapMap, numeric genotype matrices or
+    PLINK) as a founder population for AlphaSimR simulations. It guides users
+    through uploading data, quality-control review, filtering (MAF, missingness,
+    monomorphic markers), optional trait definition and export of the objects
+    required by AlphaSimR::newMapPop(), with progress feedback, helpful errors,
+    optional before/after PCA validation and a full text log of the run.
+License: MIT + file LICENSE
+URL: https://ebenogoe.github.io/FounderForge, https://github.com/ebenogoe/FounderForge
+BugReports: https://github.com/ebenogoe/FounderForge/issues
+Depends:
+    R (>= 3.5.0)
+Imports:
+    AlphaSimR,
+    bsicons,
+    bslib,
+    config (>= 0.3.1),
+    data.table,
+    DT,
+    ggplot2,
+    golem (>= 0.5.1),
+    rlang,
+    shiny (>= 1.7.0),
+    shinybusy,
+    shinyFiles,
+    shinyWidgets,
+    stats,
+    utils,
+    vcfR
+Suggests:
+    patchwork,
+    spelling,
+    testthat (>= 3.0.0)
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3

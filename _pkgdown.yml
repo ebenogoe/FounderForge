@@ -1,0 +1,24 @@
+url: https://ebenogoe.github.io/FounderForge
+
+template:
+  bootstrap: 5
+  bslib:
+    primary: "#1D9E75"
+    base_font: {google: "Inter"}
+
+home:
+  title: FounderForge
+  description: >
+    Prepare your marker data as a founder population for AlphaSimR simulations,
+    with a point-and-click Shiny app - no coding required.
+
+navbar:
+  structure:
+    left:  [intro, reference, news]
+    right: [search, github]
+
+reference:
+  - title: Run the application
+    desc: Launch the FounderForge Shiny app.
+    contents:
+      - run_app

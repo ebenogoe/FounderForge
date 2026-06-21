@@ -1,0 +1,20 @@
+# RStudio / R session state
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+.Rapp.history
+
+# pkgdown build output (deployed to the gh-pages branch by CI, not committed here)
+docs/
+
+# package build artefacts
+*.tar.gz
+*.Rcheck/
+
+# local tooling
+.claude/
+.DS_Store
+
+# reference material - not part of the package / not for redistribution
+AlphaSimR Manual.pdf

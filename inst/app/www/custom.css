@@ -1,0 +1,121 @@
+/* FounderForge custom styles ------------------------------------------------ */
+body { background: #f6f8f7; }
+
+/* Filled action buttons: a clear medium green with white text for readability */
+.btn-primary, .btn-success {
+  background-color: #27ae84;
+  border-color: #27ae84;
+  color: #ffffff;
+}
+.btn-primary:hover, .btn-success:hover,
+.btn-primary:focus, .btn-success:focus,
+.btn-primary:active, .btn-success:active {
+  background-color: #1f9170;
+  border-color: #1f9170;
+  color: #ffffff;
+}
+.btn-primary .bi, .btn-success .bi { color: #ffffff; }
+
+/* Processing modal (shinybusy): truly centre it, with comfortable spacing.
+   shinybusy's helper over-translates vertically; override the inline transform. */
+.modal-dialog:has(.shinybusy-modal) {
+  position: fixed !important;
+  top: 50% !important;
+  left: 50% !important;
+  margin: 0 !important;
+  transform: translate(-50%, -50%) !important;
+}
+.shinybusy-modal {                      /* this is the modal-body */
+  padding: 2.25rem 2.75rem !important;
+}
+.shinybusy-modal-spinner {
+  margin: 0 auto 1.6rem auto !important;
+}
+.shinybusy-modal-text {
+  margin-top: 0.25rem;
+  font-size: 1.05rem;
+  color: #2c3a35;
+}
+
+/* Welcome screen: full-bleed perspective honeycomb background.
+   A flat honeycomb SVG is tilted in 3D and faded out toward the top so it reads
+   as a receding mesh "floor", spanning the whole homepage behind the content. */
+.ff-welcome-wrap {
+  position: relative;
+  overflow: hidden;
+  min-height: calc(100vh - 140px);
+}
+.ff-hex-stage {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  perspective: 720px;
+  perspective-origin: 50% 100%;
+}
+.ff-hex-plane {
+  position: absolute;
+  left: 50%;
+  bottom: -8%;
+  width: 200%;
+  height: 150%;
+  transform: translateX(-50%) rotateX(62deg);
+  transform-origin: bottom center;
+  background: center bottom / cover no-repeat url("hex_bg.svg");
+  opacity: 0.55;
+  -webkit-mask-image: linear-gradient(to top, #000 0%, rgba(0,0,0,0.85) 22%, transparent 62%);
+  mask-image: linear-gradient(to top, #000 0%, rgba(0,0,0,0.85) 22%, transparent 62%);
+}
+.ff-welcome-wrap > .ff-hero,
+.ff-welcome-wrap > .bslib-grid { position: relative; z-index: 1; }
+
+.ff-topbar {
+  background: #ffffff;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+  padding: 0.6rem 1.2rem;
+  display: flex; align-items: center; gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+.ff-brand {
+  font-size: 1.35rem; font-weight: 700; color: #1D9E75;
+  display: flex; align-items: center; gap: 0.5rem; text-decoration: none;
+}
+.ff-topbar .spacer { flex: 1 1 auto; }
+.ff-topbar .btn-link { color: #185FA5; text-decoration: none; font-weight: 500; }
+
+.ff-hero { text-align: center; padding: 2.5rem 1rem 1.5rem; }
+.ff-hero h1 { font-size: 2.4rem; font-weight: 700; }
+.ff-hero p.lead { font-size: 1.2rem; color: #5f6b66; max-width: 640px; margin: 0.5rem auto 0; }
+.ff-hero-icon {
+  width: 84px; height: 84px; border-radius: 50%;
+  background: rgba(29,158,117,0.12);
+  display: inline-flex; align-items: center; justify-content: center;
+  font-size: 2.6rem; color: #1D9E75; margin-bottom: 1rem;
+}
+
+.ff-card-action { cursor: pointer; transition: transform .12s ease, box-shadow .12s ease; height: 100%; text-align: center; }
+.ff-card-action:hover { transform: translateY(-3px); box-shadow: 0 8px 22px rgba(0,0,0,0.10); }
+.ff-card-action .bi { font-size: 2rem; }
+a:has(.ff-card-action) { color: inherit; }
+
+.ff-stepper { list-style: none; padding: 0; margin: 0; }
+.ff-step {
+  display: flex; align-items: center; gap: 0.7rem;
+  padding: 0.65rem 0.8rem; border-radius: 0.6rem; margin-bottom: 0.35rem;
+  color: #6b7670; font-weight: 500;
+}
+.ff-step .ff-step-num {
+  width: 28px; height: 28px; border-radius: 50%;
+  display: inline-flex; align-items: center; justify-content: center;
+  background: #e3e8e6; color: #6b7670; font-size: 0.9rem; flex: none;
+}
+.ff-step.active { background: rgba(29,158,117,0.12); color: #1D9E75; }
+.ff-step.active .ff-step-num { background: #1D9E75; color: #fff; }
+.ff-step.done .ff-step-num { background: #185FA5; color: #fff; }
+.ff-step.done { color: #3a4742; }
+
+.ff-help { color: #185FA5; cursor: help; margin-left: 0.3rem; }
+
+.ff-metric { background: #f0f4f2; border-radius: 0.7rem; padding: 1rem 1.1rem; }
+.ff-metric .ff-metric-label { font-size: 0.92rem; color: #6b7670; }
+.ff-metric .ff-metric-value { font-size: 1.7rem; font-weight: 700; color: #223; }

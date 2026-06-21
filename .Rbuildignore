@@ -1,0 +1,15 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+^data-raw$
+dev_history.R
+^dev$
+$run_dev.*
+^.here$
+^AlphaSimR Manual\.pdf$
+^LICENSE\.md$
+^\.claude$
+^plan.*\.md$
+^_pkgdown\.yml$
+^docs$
+^pkgdown$
+^\.github$
