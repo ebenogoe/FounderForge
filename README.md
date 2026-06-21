@@ -4,6 +4,7 @@
 [![R-CMD-check](https://github.com/ebenogoe/FounderForge/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/ebenogoe/FounderForge/actions/workflows/R-CMD-check.yaml)
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![R-universe](https://ebenogoe.r-universe.dev/badges/FounderForge)](https://ebenogoe.r-universe.dev/FounderForge)
 <!-- badges: end -->
 
 **Prepare your marker data as a founder population for AlphaSimR simulations - no coding required.**
@@ -146,11 +147,21 @@ pop <- newPop(founderPop, simParam = SP)
 
 ## Installation
 
-Requires R (>= 3.5.0). Install FounderForge and its dependencies:
+Requires R (>= 3.5.0).
+
+From [R-universe](https://ebenogoe.r-universe.dev/FounderForge) (prebuilt binaries, no
+compiling - recommended):
+
+```r
+install.packages("FounderForge",
+  repos = c("https://ebenogoe.r-universe.dev", "https://cloud.r-project.org"))
+```
+
+Or install from GitHub (builds from source; needs Rtools on Windows / Xcode on macOS):
 
 ```r
 # install.packages("remotes")
-remotes::install_github("ebenogoe/FounderForge")   # or install_local("path/to/FounderForge")
+remotes::install_github("ebenogoe/FounderForge")
 ```
 
 Key dependencies (installed automatically): `AlphaSimR`, `vcfR`, `data.table`, `bslib`,
