@@ -199,17 +199,22 @@
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h2>
-<p>Requires R (&gt;= 3.5.0). Install FounderForge and its dependencies:</p>
+<p>Requires R (&gt;= 3.5.0).</p>
+<p>From <a href="https://ebenogoe.r-universe.dev/FounderForge" class="external-link">R-universe</a> (prebuilt binaries, no compiling - recommended):</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"FounderForge"</span>,</span>
+<span>  repos <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"https://ebenogoe.r-universe.dev"</span>, <span class="st">"https://cloud.r-project.org"</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
+<p>Or install from GitHub (builds from source; needs Rtools on Windows / Xcode on macOS):</p>
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># install.packages("remotes")</span></span>
-<span><span class="fu">remotes</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"ebenogoe/FounderForge"</span><span class="op">)</span>   <span class="co"># or install_local("path/to/FounderForge")</span></span></code></pre></div>
+<span><span class="fu">remotes</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"ebenogoe/FounderForge"</span><span class="op">)</span></span></code></pre></div>
 <p>Key dependencies (installed automatically): <code>AlphaSimR</code>, <code>vcfR</code>, <code>data.table</code>, <code>bslib</code>, <code>bsicons</code>, <code>shinyFiles</code>, <code>shinyWidgets</code>, <code>shinybusy</code>, <code>DT</code>, <code>ggplot2</code>. <code>patchwork</code> is suggested for the side-by-side PCA figure.</p>
 <hr>
 </div>
 <div class="section level2">
 <h2 id="running-the-app">Running the app<a class="anchor" aria-label="anchor" href="#running-the-app"></a>
 </h2>
-<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://ebenogoe.github.io/FounderForge/">FounderForge</a></span><span class="op">)</span></span>
 <span><span class="fu"><a href="reference/run_app.html">run_app</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
 <p>FounderForge is designed to run locally so it can read large genotype files directly from disk (via <code>shinyFiles</code>) and write outputs to a folder you choose.</p>
@@ -241,7 +246,7 @@
 <div class="section level2">
 <h2 id="tests">Tests<a class="anchor" aria-label="anchor" href="#tests"></a>
 </h2>
-<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">devtools</span><span class="fu">::</span><span class="fu">test</span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
 <hr>
 </div>
@@ -288,6 +293,7 @@
 <li><a href="https://github.com/ebenogoe/FounderForge/actions/workflows/R-CMD-check.yaml" class="external-link"><img src="https://github.com/ebenogoe/FounderForge/actions/workflows/R-CMD-check.yaml/badge.svg" alt="R-CMD-check"></a></li>
 <li><a href="https://lifecycle.r-lib.org/articles/stages.html#experimental" class="external-link"><img src="https://img.shields.io/badge/lifecycle-experimental-orange.svg" alt="Lifecycle: experimental"></a></li>
 <li><a href="https://opensource.org/licenses/MIT" class="external-link"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License: MIT"></a></li>
+<li><a href="https://ebenogoe.r-universe.dev/FounderForge" class="external-link"><img src="https://ebenogoe.r-universe.dev/badges/FounderForge" alt="R-universe"></a></li>
 </ul>
 </div>
 

@@ -168,12 +168,24 @@ pop <- newPop(founderPop, simParam = SP)
 
 ## Installation
 
-Requires R (\>= 3.5.0). Install FounderForge and its dependencies:
+Requires R (\>= 3.5.0).
+
+From [R-universe](https://ebenogoe.r-universe.dev/FounderForge)
+(prebuilt binaries, no compiling - recommended):
+
+``` r
+
+install.packages("FounderForge",
+  repos = c("https://ebenogoe.r-universe.dev", "https://cloud.r-project.org"))
+```
+
+Or install from GitHub (builds from source; needs Rtools on Windows /
+Xcode on macOS):
 
 ``` r
 
 # install.packages("remotes")
-remotes::install_github("ebenogoe/FounderForge")   # or install_local("path/to/FounderForge")
+remotes::install_github("ebenogoe/FounderForge")
 ```
 
 Key dependencies (installed automatically): `AlphaSimR`, `vcfR`,
